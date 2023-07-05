@@ -1,0 +1,12 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color :rgb(0, 0, 0);
+    font-family: Arial;
+    font-family: "Hitmarker Text Regular";
+    overflow-x: hidden;
+}

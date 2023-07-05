@@ -1,0 +1,117 @@
+#surface{
+    position: fixed;
+    top: 45px;
+    font-family:  'Monomaniac One', sans-serif;
+    width: 100dvw;
+    height: 100dvh;
+    overflow: scroll;
+}
+ul {
+    list-style-type: none;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    min-width:min-content;
+    height: 100%;
+    font-size: 30px;
+    background-image: url(./../ASSET/nav-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color:white;
+   
+}
+.link-opt{
+    margin-top:10px;
+    margin-right: 30px;
+}
+.option{
+    padding: 0px 10px 0px 50px;  
+    position: relative;
+    cursor: pointer;
+}
+.option::before{
+    content: 'X';
+    visibility :hidden;
+    font-weight: bolder;
+    position: absolute;
+    left: 20px;
+    color: white;
+    margin-right: 100px;
+    font-size: 35px;
+    font-family: 'Indie Flower', cursive;
+    
+}
+.option:hover{
+    color: rgba(255, 0, 0, 0.789);
+    cursor: pointer;
+}
+.option:hover::before{
+    visibility: visible;
+    color: rgb(255, 0, 0);
+}
+.home{
+    padding: 0px 10px 0px 50px;  
+    position: relative;
+    color: rgba(255, 0, 0, 0.789);
+    cursor: pointer;
+}
+
+.home::before{
+    content: 'X';
+    position: absolute;
+    font-weight: bolder;
+    left: 20px;
+    color: rgb(255, 0, 0);
+    margin-right: 100px;
+    font-size: 35px;
+    font-family: 'Indie Flower', cursive;
+}
+.option2{
+    padding: 0px 10px 0px 80px;
+    position: relative;
+    cursor: pointer;
+   
+}
+.option2::before{
+    content: 'X';
+    visibility :hidden;
+    position: absolute;
+    font-weight: bolder;
+    left: 50px;
+    color: white;
+    margin-right: 100px;
+    font-size: 35px;
+    font-family: 'Indie Flower', cursive;
+}
+.option2:hover{
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.option2:hover::before{
+    visibility: visible;
+    color: rgba(255, 0, 0, 0.789);
+}
+.nav-footer{ 
+    display: inline;
+    cursor: pointer;
+}
+.nav-footer li{
+    display: inline;
+    margin: 0px -30px 0px 50px;
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgb(192, 192, 192);
+    
+}
+.nav-footer:hover{
+    color: white;
+    
+}
+#lang{
+    background-color: black;
+    color: white;
+    border: 0px;
+}
