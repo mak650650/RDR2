@@ -1,3 +1,16 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color :rgb(0, 0, 0);
+    font-family: Arial;
+    font-family: "Hitmarker Text Regular";
+    overflow-x: hidden;
+}
+/*NAVBAR*/
 #surface{
     position: fixed;
     top: 45px;
@@ -114,4 +127,61 @@ ul {
     background-color: black;
     color: white;
     border: 0px;
+}
+main{
+    position: relative;
+    z-index: -1;
+}
+#hero-section{
+    position: absolute;
+    top: 40px;
+}
+#hero-section>img{
+    width: 100%;
+    height: auto;
+    
+}
+/*HEADER*/
+header{
+    position: relative;
+    color: white;
+    font-family:  'Monomaniac One', sans-serif;
+}
+#head{
+    width: 100vw;
+    height: 45px;
+    display: flex;
+    background-color: black;
+    position: absolute;
+    z-index: 5;
+}
+.material-symbols-outlined{ 
+    margin: 10px 10px 1px 10px;
+    cursor: pointer; 
+}
+.material-symbols-outlined::after{
+    content: 'RED DEAD REDEMPTION 2';
+    position: absolute;
+    top:5px;
+    font-family:  'Monomaniac One', sans-serif;
+    margin: 4px 10px 15px 10px;
+    cursor: pointer;
+    font-size: 23px;
+}
+.material-symbols-outlined:hover::after{
+    color: rgba(255, 0, 0, 0.789);
+}
+.right{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./../ASSET/button-bg.png);
+    padding: 10px 35px 18px 35px;
+    border-bottom: 1px solid black;
+}
+.right>a{ 
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px
 }
