@@ -22,7 +22,7 @@ body{
     font-family: chinese rock Regular;
     width: 100dvw;
     
-    overflow:scroll;
+    overflow-x:hidden;
     visibility: hidden;
 }
 a{
