@@ -226,4 +226,8 @@ header{
         transition: all ease 0.3s;
         font-size: 15px
     }
+     #hero-section>img{
+        content: url(./ASSET/hero-section-mobile.png);
+        width: 100vw;
+    }
   }
