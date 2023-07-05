@@ -1,3 +1,8 @@
+@font-face {
+    font-family: chinese rock Regular;
+    src: url(./fonts/CHINESER.TTF);
+    font-display: swap;
+}
 *,*::after,*::before{
     margin: 0;
     padding: 0;
@@ -7,18 +12,21 @@ body{
     background-color: black;
     color :rgb(0, 0, 0);
     font-family: Arial;
-    font-family: "Hitmarker Text Regular";
+    font-family: chinese rock Regular;
     overflow-x: hidden;
 }
 /*NAVBAR*/
 #surface{
     position: fixed;
     top: 45px;
-    font-family:  'Monomaniac One', sans-serif;
+    font-family: chinese rock Regular;
     width: 100dvw;
     height: 100dvh;
-    overflow: scroll;
+    overflow:scroll;
     visibility: hidden;
+}
+a{
+    text-decoration: none;
 }
 ul {
     list-style-type: none;
@@ -29,8 +37,9 @@ ul {
     position: fixed;
     min-width:min-content;
     height: 100%;
-    font-size: 30px;
+    font-size: 35px;
     color:white;
+    
     
 }
 
@@ -52,12 +61,12 @@ ul {
     opacity: 0.95;
 }
 .option{
-    padding: 0px 10px 0px 50px;  
+    padding: 0px 10px 10px 50px;  
     position: relative;
     cursor: pointer;
 }
 .submenu{
-    padding: 0px 10px 0px 50px; 
+    padding: 0px 10px 10px 50px; 
     cursor: pointer; 
 }
 .option::before{
@@ -66,22 +75,28 @@ ul {
     font-weight: bolder;
     position: absolute;
     left: 20px;
+    top:-6px;
     color: white;
     margin-right: 100px;
     font-size: 35px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower';
+    transition: all ease 0.01s;
+    
     
 }
 .option:hover{
     color: rgba(255, 0, 0, 0.789);
     cursor: pointer;
+    
+    
 }
 .option:hover::before{
     visibility: visible;
-    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.789);
+    
 }
 .home{
-    padding: 0px 10px 0px 50px;  
+    padding: 0px 10px 10px 50px;  
     position: relative;
     color: rgba(255, 0, 0, 0.789);
     cursor: pointer;
@@ -92,13 +107,15 @@ ul {
     position: absolute;
     font-weight: bolder;
     left: 20px;
-    color: rgb(255, 0, 0);
+    top:-6px;
+    color: rgba(255, 0, 0, 0.789);
     margin-right: 100px;
     font-size: 35px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower';
+    
 }
 .option2{
-    padding: 0px 10px 0px 80px;
+    padding: 0px 10px 10px 80px;
     position: relative;
     cursor: pointer;
    
@@ -109,13 +126,15 @@ ul {
     position: absolute;
     font-weight: bolder;
     left: 50px;
+    top:-6px;
     color: white;
     margin-right: 100px;
     font-size: 35px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower';
+    transition: all ease 0.01s;
 }
 .option2:hover{
-    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.789);
     cursor: pointer;
 }
 .option2:hover::before{
@@ -136,13 +155,14 @@ ul {
     
 }
 .nav-footer:hover{
-    color: white;
+    color: rgb(255, 252, 252);
     
 }
 #lang{
     background-color: black;
-    color: white;
+    color: rgb(192, 192, 192);
     border: 0px;
+    font-family: chinese rock Regular;
 }
 main{
     position: relative;
@@ -153,9 +173,6 @@ main{
     top: 40px;
     filter:none;
     transition:all ease-in-out 0.3s;
-    
-    
-    
 
 }
 #hero-section>img{
@@ -165,9 +182,9 @@ main{
 }
 /*HEADER*/
 header{
-    position: relative;
+    position: fixed;
     color: white;
-    font-family:  'Monomaniac One', sans-serif;
+    font-family: chinese rock Regular;
 }
 #head{
     width: 100vw;
@@ -180,16 +197,19 @@ header{
 .material-symbols-outlined{ 
     margin: 10px 10px 1px 10px;
     cursor: pointer; 
+    
 }
 .material-symbols-outlined::after{
     content: 'RED DEAD REDEMPTION 2';
     position: absolute;
-    top:5px;
-    font-family:  'Monomaniac One', sans-serif;
+    top:7px;
+    
+    font-family: chinese rock Regular;
     margin: 4px 10px 15px 10px;
     cursor: pointer;
     font-size: 23px;
 }
+.material-symbols-outlined:hover{color: rgba(255, 0, 0, 0.789);}
 .material-symbols-outlined:hover::after{
     color: rgba(255, 0, 0, 0.789);
 }
@@ -199,7 +219,7 @@ header{
     align-items: center;
     justify-content: center;
     background-image: url(./../ASSET/button-bg.png);
-    padding: 10px 35px 18px 35px;
+    padding: 10px 35px 10px 35px;
     border-bottom: 1px solid black;
 }
 .right>a{ 
@@ -208,10 +228,13 @@ header{
     font-size: 25px
 }
 
-@media screen and (max-width: 600px) {
+
+
+@media screen and (max-width: 700px) {
+    
     .link{
         transition: all ease 0.3s;
-        font-size: 20px;
+        font-size: 25px;
     }
     .material-symbols-outlined::after{
         transition: all ease 0.3s;
@@ -226,8 +249,24 @@ header{
         transition: all ease 0.3s;
         font-size: 15px
     }
-     #hero-section>img{
+    #hero-section>img{
         content: url(./ASSET/hero-section-mobile.png);
         width: 100vw;
     }
+    .home::before{
+        transition: all ease 0.3s;
+        font-size: 25px;
+        margin-right: 60px;
+    }
+    .option::before{
+        transition: all ease 0.3s;
+        font-size: 25px;
+        margin-right: 60px;
+    }
+    .option2::before{
+        transition: all ease 0.3s;
+        font-size: 25px;
+        margin-right: 60px;
+    }
+
   }
