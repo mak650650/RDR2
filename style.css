@@ -23,7 +23,7 @@ ul {
 }
 /*NAVBAR*/
 #surface{
-    position: relative;
+    position: fixed;
     top: 45px;
     font-family: chinese rock Regular;
     width: 100dvw;
@@ -31,35 +31,25 @@ ul {
     overflow-x:hidden;
     visibility: hidden;
     
+}
 
-}
-.nav-bg{
-    position: absolute; 
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    height: 100%;
-    width: 100%;
-}
-.nav-bg>img{
-    width: 100%;
-    height: 92dvh;
-    object-fit: cover;
-    
-    opacity: 0.95;
-}
 
 .link{
+    position: fixed;
     display: flex;
     flex-direction: column;
-    position: fixed;
-    min-width:min-content;
+    min-width: min-content;
     height: 90dvh;
     font-size: 35px;
-    color:white;
+    color:rgb(204, 204, 204);
     overflow-y: scroll;
     
+    background-color: rgba(0, 0, 0, 0.89);
+    box-shadow: 10px 2px 30px 10px rgb(0, 0, 0);
+    
 }
+
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .link::-webkit-scrollbar {
     display: none;
@@ -290,7 +280,7 @@ header{
     }
 
   }
-  @media screen and (max-height:620px) {
+  @media screen and (max-height:601px) {
     .nav-bg>img{
         height: 120dvh;
     }
