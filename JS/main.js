@@ -19,7 +19,7 @@ function navbarVisible(){
 function navbarToHome(){
     if(navbar.style.visibility = "visible") {
         navbar.style.visibility = "hidden";
-        heroSection.style.filter = "none";}
+        main.style.filter = "none";}
 }
 
 logo.addEventListener("click",navbarVisible);
