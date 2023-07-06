@@ -322,8 +322,8 @@ main{
         height: 600px;
     }
     .content>p{
-        padding: 20px 35px;
-        font-size: 1.1rem;
+        padding: 20px 45px;
+        font-size: 1.25rem;
     }
     #description>img{
          object-fit: cover;
