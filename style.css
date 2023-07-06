@@ -32,8 +32,6 @@ ul {
     visibility: hidden;
     
 }
-
-
 .link{
     position: fixed;
     display: flex;
@@ -55,9 +53,8 @@ ul {
     display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+/* Hide scrollbar for Firefox */
 .link {
-  -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
@@ -174,22 +171,7 @@ ul {
     border: 0px;
     font-family: chinese rock Regular;
 }
-main{
-    position: relative;
-    z-index: -1;
-}
-#hero-section{
-    position: absolute;
-    top: 40px;
-    filter:none;
-    transition:all ease-in-out 0.3s;
 
-}
-#hero-section>img{
-    width: 100%;
-    height: auto;
-    
-}
 /*HEADER*/
 header{
     position: fixed;
@@ -237,9 +219,67 @@ header{
     color: rgb(0, 0, 0);
     font-size: 25px
 }
+/*MAIN*/ 
+main{
+    position: relative;
+    z-index: -1;
+    filter: none;
+}
+/*HERO SECTION*/
+#hero-section{
+    /* position: absolute; */
+    top: 40px;
+    filter:none;
+    transition:all ease-in-out 0.3s;
+    z-index: 0;
+}
+#hero-section>img{
+    width: 100%;
+    height: auto; 
+}
+/*DESCRIPTION*/
+#description{
+    min-width: 100vw;
+    height: 300px;
+    color: aliceblue;  
+    position: relative;
+    z-index: 0;
+}
 
+#description>img{
+   position: absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   z-index: 1;
+   width: 100vw;
+   height: 300px;
+    
+}
+.content{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
 
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.content>p{
+    font-size: 1.2rem;
+    padding: 50px 500px;
+    line-height: 1.15;
+    font-family: Univers Condensed,sans-serif;
+    
+}
 
+@media screen and (max-width: 1500px) {
+    .content>p{
+        padding: 30px 150px;
+    }
+}
+/*700---*/
 @media screen and (max-width: 700px) {
     
     .link{
@@ -278,11 +318,16 @@ header{
         font-size: 25px;
         margin-right: 60px;
     }
-
-  }
-  @media screen and (max-height:601px) {
-    .nav-bg>img{
-        height: 120dvh;
+    .content{
+        height: 600px;
     }
-    
+    .content>p{
+        padding: 20px 50px;
+        font-size: 1.6rem;
+    }
+    #description>img{
+         object-fit: cover;
+         top:100%;
+        height: 700px; 
+    }
 }
